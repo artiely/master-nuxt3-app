@@ -9,6 +9,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    'shadcn-nuxt',
+    "@nuxtjs/tailwindcss"
   ],
 
   experimental: {
@@ -25,6 +27,17 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+  },
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
   },
 
   nitro: {
